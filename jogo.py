@@ -37,7 +37,21 @@ elif nivel == 2:
     print("você não especial (MÉDIO)")
     print ("Agora você tem 10 tentativas!")
     totaltentativas = 10
-else:
+elif nivel == 3:
     print("você é burro? (DÍFICIL)")
     print ("Agora você tem 5 tentativas!")
     totaltentativas = 5
+else:
+    print("Essa dificuldade não existe")
+for rodada in range (1, totaltentativas +1):
+    print ("Tentativas {} de {}".format(rodada, totaltentativas))
+    chute_str = input("Digite um número entre 1 e 100: ")
+    chute = int(chute_str)
+
+    if (chute < 1 or > 100):
+        print("Número invalido")
+        continue
+    
+    acertou = chute == numeroSecreto
+    maior = chute > numeroSecreto
+    menor = chute < numeroSecreto
