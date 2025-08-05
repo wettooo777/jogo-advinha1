@@ -48,7 +48,7 @@ for rodada in range (1, totaltentativas +1):
     chute_str = input("Digite um número entre 1 e 100: ")
     chute = int(chute_str)
 
-    if chute < 1 or > 100:
+    if (chute < 1 or chute > 100):
         print("Número invalido")
         continue
     
@@ -61,7 +61,7 @@ for rodada in range (1, totaltentativas +1):
         break
     else:
         if(maior):
-            print("Você errou! Seu chute foi maior que número secreto")
+            print("Você errou!Seu chute foi maior que número secreto")
         elif(menor):
             print("Você errou! Seu chute foi menor que número secreto")
 
