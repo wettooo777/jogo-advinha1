@@ -13,6 +13,7 @@ print(f"{RED}#######################{RESET}")
 print(f"{RED}#{RESET} {MAGENTA}jogo de adivinhação{RESET} {RED} #{RESET}")
 print(f"{RED}#{RESET} {BLUE}    Welliton h.    {RESET} {RED}#{RESET}")
 print(f"{RED}#######################{RESET}")
+print(f"{YELLOW}")
 
 
 numeroSecreto = random.randrange(0,100)
@@ -40,7 +41,7 @@ elif nivel == 3:
 
 elif nivel == 4:
     print(f"{MAGENTA}Porque? (TREINO)")
-    print("Nesse modo ele não terá nenhum desafio")
+    print("Nesse modo não terá nenhum desafio")
     print(f"Número secreto: {numeroSecreto}")
 
 else:
